@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>identificador</title>
+</head>
+<body>
+    <center>
+        <h1>Identificador de Emociones</h1>
+        <br>
+        <h2>La Pagina Reconoce las Emociones:</h2>
+        <br>
+        <h4>Feliz (dibujo)</h4>
+        <h4>Triste (dibujo)</h4>
+        <h4>Enojado (dibujo)</h4>
+        <h4>Sorpresa (dibujo)</h4>
+        <h4>Miedo (dibujo)</h4>
+        <br>
+        <div id="camara2">
+           <h3 id="C">Camara:</h3>
+           <div id="camara">
+
+           </div>
+           <br>
+           <button id="fotoB" onclick="foto()">Tomar Foto 😊</button>
+        </div>
+        <div id="foto2">
+           <h3 id="F">Foto:</h3>
+           <div id="foto">
+
+           </div>
+           <br>
+           <button id="identificarB" onclick="identificar()">Identificar 😊</button>
+        </div>
+        <br>
+        <h4>Emocion:</h4>
+        <h4 id="ObjetoDE"></h4>
+        <br>
+        <h4>Presicion:</h4>
+        <h4 id="PresicionE"></h4>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
